@@ -5,13 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "tablegrok"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{grabs html tables as ruby}
+    gem.description = %Q{Look: html tables as Ruby}
     gem.email = "kyle@kylemaxwell.com"
     gem.homepage = "http://github.com/fizx/tablegrok"
     gem.authors = ["Kyle Maxwell"]
-    gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_development_dependency "libxml-ruby"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
